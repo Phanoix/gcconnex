@@ -11,11 +11,7 @@ sudo: false
 
 branches:
   except:
-    - 1.0
-    - 1.5
-    - 1.6
-    - 1.7
-    - 1.8
+    - gcconnex-elgg1.8
 
 matrix:
   include:
@@ -30,7 +26,7 @@ matrix:
        - bash .scripts/travis/check_commit_msgs.sh
        - vendor/bin/phpcs --standard=vendor/elgg/sniffs/elgg.xml --warning-severity=0 --ignore=*/tests/*,*/upgrades/*,*/deprecated* engine/classes engine/lib
        - composer validate
-       
+
     # Build and test javascript
     - php: 5.6
       env: VARIA=true
@@ -38,14 +34,14 @@ matrix:
        - npm install
       script:
        - npm test
-      
+
     # Build docs and check for errors
     # Flags used here, not in `make html`:
     #  -n   Run in nit-picky mode. Currently, this generates warnings for all missing references.
     #  -W   Turn warnings into errors. This means that the build stops at the first warning and sphinx-build exits with exit status 1.
     - php: 5.6
       env: VARIA=true
-      install: 
+      install:
        - pip install --user "Sphinx==1.3.1"
        - pip install --user "sphinx-intl"
        - export PATH=$PATH:$HOME/.local/bin
@@ -75,7 +71,7 @@ matrix:
        - wget https://scrutinizer-ci.com/ocular.phar
        - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
 
-services: 
+services:
  - mysql
 
 install:
@@ -89,7 +85,7 @@ install:
 script:
  - phpunit
  - php -f ./engine/tests/suite.php
- 
+
 notifications:
   email:
     secure: exC/ws07lLOj3Y43C89jiaKpyB8Yt7DPGSCShV4R3Wkw/hVVzjxt1BinPxzsyL5DC7APUMcTHGOhDB2oCE4ynDE6o6L9bH79fc+V8IYAiNaEIGL0AOuHdnRdGN9GMrr2jv78cZ5MctuUTkeYLaoOEyDGHmkMhqa6SufIDAY8b58=

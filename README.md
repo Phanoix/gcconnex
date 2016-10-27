@@ -1,7 +1,7 @@
 <h1>GCconnex & How to Install</h1>
-This project is forked from Elgg<sup>[1](#fn1)</sup> by the Federal Government of Canada. This branch contains the main version of Elgg for 1.12 which is currently in development for future launch of the new GCconnex.
+This project is forked from Elgg<sup>[1](#fn1)</sup> by the Federal Government of Canada.
 
-All dependencies is included in this branch for Elgg v1.12, <s>please note that some modules are included as submodules<sup>[2](#fn2)</sup>, you may need to pull from submodule</s>.
+All dependencies is included in this branch for Elgg v1.12.
 
 <h2>Mod list</h2>
 (helpful for testing / development)

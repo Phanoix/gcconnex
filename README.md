@@ -78,13 +78,8 @@ All dependencies is included in this branch for Elgg v1.12.
 <sub><a name="fn2">2</a>: WET4 is currently in development to comply with the standards of UX within the Government</sub>
 
 <h1>GCconnex branches explained</h1>
-<strong>1.*</strong> - Older version of Elgg codebase
 
 <strong>GCconnex</strong> - Codebase for main production copy of GCconnex, any changes made or additional functionality that is developed will be merged into this branch.
-
-<strong>Staging</strong> - Pre release version used by TBS-SCT developers for development and testing
-
-<strong>devel-*</strong> - Branches used by TBS-SCT developers
 
 <strong>gcconnex-elgg1.8</strong> - Old GCconnex version code using Elgg v1.8
 

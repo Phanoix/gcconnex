@@ -7,16 +7,8 @@
 /composer.phar
 /cache
 
-#log file
-/mod/missions_organization/get_ancestors_log.txt
-
-# ignore Single Signon mods
-/mod/saml_link/
-/mod/simplesaml/
-
-/mod/machine_translation/
-/mod/gsa/
-/mod/geds_sync/
+#ignore mods by default... testing composer move
+/mod/
 
 # don't ignore bundled plugins
 !/mod/aalborg_theme/

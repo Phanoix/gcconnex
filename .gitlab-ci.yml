@@ -49,9 +49,9 @@ variables:
   POSTGRES_ENABLED: "true"
   POSTGRES_DB: $CI_ENVIRONMENT_SLUG
   DBHOST: gcconnex-db
-  DOCKER: 1
-  INIT: gcconnex
-  HOME: /var/www/html
+#  DOCKER: 1
+#  INIT: gcconnex
+#  HOME: /var/www/html
 
   KUBERNETES_VERSION: 1.11.6
   HELM_VERSION: 2.12.2
